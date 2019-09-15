@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-pixel-drawing-app/static/css/main.6c463317.chunk.css",
+    "main.js": "/react-pixel-drawing-app/static/js/main.91b44e34.chunk.js",
+    "main.js.map": "/react-pixel-drawing-app/static/js/main.91b44e34.chunk.js.map",
+    "runtime~main.js": "/react-pixel-drawing-app/static/js/runtime~main.71436c69.js",
+    "runtime~main.js.map": "/react-pixel-drawing-app/static/js/runtime~main.71436c69.js.map",
+    "static/js/2.3bbc39c3.chunk.js": "/react-pixel-drawing-app/static/js/2.3bbc39c3.chunk.js",
+    "static/js/2.3bbc39c3.chunk.js.map": "/react-pixel-drawing-app/static/js/2.3bbc39c3.chunk.js.map",
+    "index.html": "/react-pixel-drawing-app/index.html",
+    "precache-manifest.4d4ccd85dbdd0bffe7315c631ca29eca.js": "/react-pixel-drawing-app/precache-manifest.4d4ccd85dbdd0bffe7315c631ca29eca.js",
+    "service-worker.js": "/react-pixel-drawing-app/service-worker.js",
+    "static/css/main.6c463317.chunk.css.map": "/react-pixel-drawing-app/static/css/main.6c463317.chunk.css.map",
+    "static/media/logo.svg": "/react-pixel-drawing-app/static/media/logo.5d5d9eef.svg"
+  }
+}
