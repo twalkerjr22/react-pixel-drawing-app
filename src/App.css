@@ -1,11 +1,115 @@
 .App {
-  text-align: center;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+.canvas {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  background-color: white;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+}
+.white{
+  background-color: white;
+}
+.red {
+    background-color: red;
+}
+.blue{
+  background-color: #61dafb;
+}
+.tan {
+  background-color: burlywood;
+}
+
+.purple{
+  background-color: purple;
+}
+
+
+.green{
+  background-color: green;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.orange{
+  background-color: orange;
+}
+
+.black{
+  background-color: black;
+}
+
+.pixel.current-color {
+  border: 4px solid yellow;
+}
+
+.pixel {
+  width: 25px;
+  height: 25px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+.canvas-save {
+  display: block;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-content: space-between;
+  color: white;
+  font-size: 24px;
+}
+
+.canvas-save label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.canvas-save button:disabled{
+  background-color:rgb(187, 187, 187);
+}
+.btn-save-canvas{
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(210, 9, 136);
+  border:none;
+  color: white;
+  margin: 20px auto;
+  display: block;
+  font-size: 24px;
+}
+.canvas-save input {
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+.canvas-save button {
+  margin-left:10px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  background-color: darkmagenta;
+  border:none;
+  color: white;
+  font-size: 20px;
+}
+
+.canvas-save .btn-clear-saves {
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+  background-color: rgb(218, 59, 31);
 }
 
 .App-header {
