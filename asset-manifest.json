@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/react-pixel-drawing-app/static/css/main.9b662c77.chunk.css",
-    "main.js": "/react-pixel-drawing-app/static/js/main.94db5a23.chunk.js",
-    "main.js.map": "/react-pixel-drawing-app/static/js/main.94db5a23.chunk.js.map",
+    "main.css": "/react-pixel-drawing-app/static/css/main.028cc399.chunk.css",
+    "main.js": "/react-pixel-drawing-app/static/js/main.36b36307.chunk.js",
+    "main.js.map": "/react-pixel-drawing-app/static/js/main.36b36307.chunk.js.map",
     "runtime~main.js": "/react-pixel-drawing-app/static/js/runtime~main.99e2e3da.js",
     "runtime~main.js.map": "/react-pixel-drawing-app/static/js/runtime~main.99e2e3da.js.map",
     "static/js/2.730c5c7b.chunk.js": "/react-pixel-drawing-app/static/js/2.730c5c7b.chunk.js",
     "static/js/2.730c5c7b.chunk.js.map": "/react-pixel-drawing-app/static/js/2.730c5c7b.chunk.js.map",
     "index.html": "/react-pixel-drawing-app/index.html",
-    "precache-manifest.01cb799c0c0008e5de10e1fd47acde49.js": "/react-pixel-drawing-app/precache-manifest.01cb799c0c0008e5de10e1fd47acde49.js",
+    "precache-manifest.7b5abba6fda2214ac9d3657d6ebf4ae8.js": "/react-pixel-drawing-app/precache-manifest.7b5abba6fda2214ac9d3657d6ebf4ae8.js",
     "service-worker.js": "/react-pixel-drawing-app/service-worker.js",
-    "static/css/main.9b662c77.chunk.css.map": "/react-pixel-drawing-app/static/css/main.9b662c77.chunk.css.map",
-    "static/media/logo.svg": "/react-pixel-drawing-app/static/media/logo.5d5d9eef.svg"
+    "static/css/main.028cc399.chunk.css.map": "/react-pixel-drawing-app/static/css/main.028cc399.chunk.css.map"
   }
 }
