@@ -4,58 +4,69 @@ import Colors from './Colors';
 
 
 const Canvas = (props) => {
+    // COMPONENT STATES
     const [saves,setSaves] = useState([]);
     const [currCanvas,setCurrCanvas] = useState({});
     const [saveName,setSaveName] = useState();
+    // SETTING OUR INITIAL MATRIX TO AN 30 X 30 2D ARRAY.
     const [matrix, setMatrix] = useState(
         Array(30)
         .fill()
         .map(() => Array(30).fill(0)
         ));
-    
+
+        // Use effect hook to do local storage fetching when this component is mounted
         useEffect(() => 
             {
-                
+                // Calling out fetch data function to get data from local storage
                 fetchMatrixData();
 
             }, 
         []);
-
+        
+        /* 
+        Function: Fetches data from local storage.
+        If there is anything in our saves, we set our canvas to the first 
+        saved canvas
+        */
         const fetchMatrixData = () => {
-            if(localStorage.getItem('saves')===null){
+
+            if(localStorage.getItem('saves')!==null){
          
-            }else{
-               var s = JSON.parse(localStorage.getItem('saves'));
+                var s = JSON.parse(localStorage.getItem('saves'));
+
                 if(s.length>0){
                     setSaves(s);
                     setMatrix(s[0].matrix);
                     setCurrCanvas(s[0]);
                 }
-                
+
             }
         }
-
+        // Function: Clear saves from local storage
         const clearAllSaves = (e) => {
             localStorage.clear();
             window.location.reload();
         }
 
+        // Function: to generate HTML for our selection menu.
        const canvasOptions = saves.map((canvas) => 
-                <option value={canvas.id} key={canvas.id}>{canvas.canvas}</option>
-                );
+            <option value={canvas.id} key={canvas.id}>{canvas.canvas}</option>
+        );
         
-       
+       // Function: Creates a new canvas
         const newCanvas = () =>{
             setMatrix(Array(30)
             .fill()
             .map(() => Array(30).fill(0)
             ));
         }
+
+        // Function: Submit a new save to local storage.
         const submitSave = (e) => {
             e.preventDefault();
             saves.push({canvas:saveName,id:saves.length,matrix:matrix});
             setSaves(saves);
-            console.log(saves);
             localStorage.setItem("saves",JSON.stringify(saves));
           }
 
@@ -69,8 +80,10 @@ const Canvas = (props) => {
             e.preventDefault(e);
             setMatrix(saves[e.target.value].matrix);
         }
-        const changeColor = (rowIndex,colIndex) => {
 
+        // Function: When the user clicks a block, this changes that blocks color
+        const changeColor = (rowIndex,colIndex) => {
+            
             var newMatrix = JSON.parse(JSON.stringify(matrix));
             newMatrix[rowIndex][colIndex] = props.currentColor;
             setMatrix(newMatrix);
